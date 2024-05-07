@@ -5,7 +5,7 @@ import SmoothScrolling from "./components/SmoothScrolling";
 const App = () => {
   return (
     <SmoothScrolling>
-      <main className="bg-black overflow-y-auto">
+      <main className="bg-white bg-opacity-80 overflow-y-auto">
         <Navbar />
         <Footer />
       </main>
