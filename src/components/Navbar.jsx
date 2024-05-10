@@ -1,21 +1,35 @@
-import { navLists } from "../constants";
+import { globalNavItems } from "../constants";
+import SearchIcon from "../assets/images/SearchIcon.svg";
+import CartIcon from "../assets/images/CartIcon.svg";
+import Logo from "../assets/images/AppleLogo.svg";
 
 const Navbar = () => {
   return (
-    <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center">
-      <nav className="flex w-full screen-max-width">
-        <div className="flex flex-1 justify-center max-sm:hidden">
-          {navLists.map((item) => (
-            <div
-              key={item}
-              className="px-5 text-xs cursor-pointer text-gray-800 hover:text-black  transition-all"
-            >
-              {item}
-            </div>
-          ))}
-        </div>
-      </nav>
-    </header>
+    <nav className="w-full py-2 sm:px-10 px-5 flex justify-between items-center screen-max-width">
+      <img src={Logo} className="w-auto h-10 cursor-pointer" alt="logo" />
+      <ul className="flex items-center justify-around w-full">
+        {globalNavItems.map((item) => (
+          <li
+            key={item}
+            className="text-xs cursor-pointer text-gray-800 hover:text-black  transition-all"
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+      <div className="flex items-center">
+        <img
+          src={SearchIcon}
+          className="w-auto h-10 cursor-pointer"
+          alt="search"
+        />
+        <img
+          src={CartIcon}
+          className="w-auto h-10 cursor-pointer ml-5"
+          alt="cart"
+        />
+      </div>
+    </nav>
   );
 };
 

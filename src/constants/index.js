@@ -1,4 +1,4 @@
-export const navLists = [
+export const globalNavItems = [
   "Store",
   "Mac",
   "iPad",
@@ -11,6 +11,8 @@ export const navLists = [
   "Accessories",
   "Support",
 ];
+
+export const navLinks = ["Overview", "Tech Specs", "Compare", "New to Mac"];
 
 export const footerLinks = [
   "Privacy Policy",
