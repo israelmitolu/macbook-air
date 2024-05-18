@@ -1,11 +1,11 @@
 import { globalNavItems } from "../constants";
-import SearchIcon from "../assets/images/SearchIcon.svg";
-import CartIcon from "../assets/images/CartIcon.svg";
-import Logo from "../assets/images/AppleLogo.svg";
+import SearchIcon from "/assets/images/SearchIcon.svg";
+import CartIcon from "/assets/images/CartIcon.svg";
+import Logo from "/assets/images/AppleLogo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="w-full py-2 sm:px-10 px-5 flex justify-between items-center screen-max-width">
+    <nav className="w-full py-2  flex justify-between items-center screen-max-width">
       <img src={Logo} className="w-auto h-10 cursor-pointer" alt="logo" />
       <ul className="flex items-center justify-around w-full">
         {globalNavItems.map((item) => (
