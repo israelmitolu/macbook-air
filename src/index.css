@@ -16,12 +16,7 @@ body {
   overflow: hidden;
   height: 100%;
   background: #fbfbfdcc;
-  user-select: none;
   font-family: "Inter", sans-serif;
-}
-
-canvas {
-  touch-action: none;
 }
 
 .screen-max-width {
@@ -29,4 +24,89 @@ canvas {
   margin-inline-end: auto;
   position: relative;
   max-width: 1120px;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  min-height: 561px;
+  min-width: 981px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 44px;
+  top: 32px;
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0071e3;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #0071e3;
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgba(0, 0, 0, 0.56);
+  width: 35px;
+  height: 35px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: rgba(210, 210, 215, 0.64);
+  border-radius: 50%;
+  top: 93%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.swiper-button-next {
+  right: 4%;
+}
+
+.swiper-button-prev {
+  left: 88%;
+}
+
+.swiper-button-disabled {
+  opacity: 0.65 !important;
 }
