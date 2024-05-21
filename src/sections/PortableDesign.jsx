@@ -112,7 +112,7 @@ const PortableDesign = () => {
         </p>
       </div>
 
-      <p className="text-[#86868b] text-2xl mt-10 font-semibold tracking-tight">
+      <p className="text-[#86868b] text-[21px] mt-10 font-semibold tracking-tight">
         <span className="text-[#1d1d1f]">Two perfectly portable sizes. </span>
         The 13‑inch model is the ultimate on‑the‑go laptop, and the 15‑inch
         model gives you more space onscreen for multitasking.
