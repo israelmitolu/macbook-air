@@ -19,11 +19,16 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+img {
+  height: auto;
+  object-fit: cover;
+}
+
 .screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
   position: relative;
-  max-width: 1120px;
+  max-width: 1020px;
 }
 
 .swiper {
