@@ -64,7 +64,7 @@ const MagSafeColors = () => {
   };
 
   return (
-    <div className="min-h-screen w-full screen-max-width h-full">
+    <div className="w-full screen-max-width h-full mb-20">
       <div className="mt-20 flex gap-6 lg:h-[70vh] h-full">
         <div className="flex flex-col gap-6 items-center w-full">
           <div className="box flex items-center justify-center bg-[#fbfbfb] h-full w-full p-8 ">
